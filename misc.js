@@ -4,17 +4,22 @@ var ALL_CARDS = ALL_CARDS_STRING.split(",");
 
 var SHEETS = [
     {
-        "cards": [
-            "22,33,44,55,66,77,88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,K8s,K9s,KTs,KJs,KQs,KAs,Q9s,QTs,QJs,QKs,QAs,J9s,JTs,JQs,JKs,JAs,T8s,T9s,TJs,TQs,TKs,TAs,97s,98s,9Ts,9Js,9Qs,9Ks,9As,86s,87s,89s,8Ts,8Js,8Qs,8Ks,8As,76s,65s,54s,A9o,ATo,AJo,AQo,AKo,KTo,KJo,KQo,KAo,QTo,QJo,QKo,QAo,JTo",
-            ""
+        "cards": ["",
+        "ATo,A9o,A8o,KTo,K9o,QJo,QTo,Q9o,JTo,T9o,A7s,A6s,K8s,K7s,K6s,K5s,Q9s,J9s,T8s,97s,86s,76s,65s,77,66,55,44,33,22",
+        "KJo,QTs,KTs,K9s,A9s,A8s,A5s,A4s,A3s,A2s,87s",
+        "AA,KK,AKs,AKo,QQ",
+        "AQo,AJo,KQo,AQs,AJs,ATs,KQs,KJs,QJs,JTs,T9s,98s,JJ,TT,99,88"
+
         ],
         "name": "Open CO",
         "tag": "open_co"
     },
     {
-        "cards": [
-            "66,77,88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,KTs,KJs,KQs,KAs,QTs,QJs,QKs,QAs,JTs,T9s,98s,AJo,AQo,AKo,KQo",
-            ""
+        "cards": ["",
+        "AJo,KQo,AJs,ATs,A9s,A8s,KJs,KTs,QJs,QTs,JTs,T9s,98s,88,77,66",
+            "AQo",
+            "AA,KK",
+            "AKo,AKs,AQs,KQs,QQ,JJ,TT,99"
         ],
         "name": "Open EP",
         "tag": "open_ep"
@@ -29,9 +34,11 @@ var SHEETS = [
         "tag": "defense_bb_vs_co"
     },
     {
-        "cards": [
-            "22,33,44,55,66,77,88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,K2s,K3s,K4s,K5s,K6s,K7s,K8s,K9s,KTs,KJs,KQs,KAs,Q2s,Q3s,Q4s,Q5s,Q6s,Q7s,Q8s,Q9s,QTs,QJs,QKs,QAs,J7s,J8s,J9s,JTs,JQs,JKs,JAs,T7s,T8s,T9s,TJs,TQs,TKs,TAs,96s,97s,98s,9Ts,9Js,9Qs,9Ks,9As,85s,86s,87s,89s,8Ts,8Js,8Qs,8Ks,8As,75s,76s,78s,79s,7Ts,7Js,7Qs,7Ks,7As,64s,65s,67s,68s,69s,6Ts,6Js,6Qs,6Ks,6As,54s,43s,32s,A2o,A3o,A4o,A5o,A6o,A7o,A8o,A9o,ATo,AJo,AQo,AKo,K9o,KTo,KJo,KQo,KAo,Q9o,QTo,QJo,QKo,QAo,J9o,JTo,JQo,JKo,JAo,T8o,T9o,TJo,TQo,TKo,TAo,98o,87o,76o",
-            ""
+        "cards": ["",
+                                             "A9o,97s,K7s,K6s,K5s,K4s,K3s,K2s,Q8s,Q7s,J8s,J7s,T7s,96s,75s,65s,54s,55,44,33,22,QJo,A8o,A7o,A6o,A5o,A4o,A3o,A2o,K9o,K8o,QJo,QTo,Q9o,Q8o,JTo,J9o,J8o,T9o,T8o,98o,Q6s,Q5s,Q4s,Q3s,Q2s",
+                                             "KTo,K9s,K8s,A7s,A6s,A5s,A4s,A3s,A2s,Q9s,J9s,86s,T8s,87s",
+                                             "AA,KK,QQ,AKs,AKo,QQ,JJ",
+                                             "AQo,AJo,ATo,KQo,KJo,AQs,AJs,ATs,A9s,A8s,KQs,KJs,KTs,QJs,QTs,JTs,T9s,98s,87s,76s,JJ,TT,99,88,77,66"
         ],
         "name": "Open SB",
         "tag": "open_sb"
@@ -99,10 +106,11 @@ var SHEETS = [
         "tag": "defense_bb_vs_ep"
     },
     {
-        "cards": [
-            "22,33,44,55,66,77,88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,K2s,K3s,K4s,K5s,K6s,K7s,K8s,K9s,KTs,KJs,KQs,KAs,Q2s,Q3s,Q4s,Q5s,Q6s,Q7s,Q8s,Q9s,QTs,QJs,QKs,QAs,J7s,J8s,J9s,JTs,JQs,JKs,JAs,T7s,T8s,T9s,TJs,TQs,TKs,TAs,96s,97s,98s,9Ts,9Js,9Qs,9Ks,9As,85s,86s,87s,89s,8Ts,8Js,8Qs,8Ks,8As,75s,76s,78s,79s,7Ts,7Js,7Qs,7Ks,7As,64s,65s,67s,68s,69s,6Ts,6Js,6Qs,6Ks,6As,54s,43s,32s,A2o,A3o,A4o,A5o,A6o,A7o,A8o,A9o,ATo,AJo,AQo,AKo,K9o,KTo,KJo,KQo,KAo,Q9o,QTo,QJo,QKo,QAo,J9o,JTo,JQo,JKo,JAo,T8o,T9o,TJo,TQo,TKo,TAo,98o,87o,76o",
-            ""
-        ],
+        "cards": ["",
+                           "87o,64s,K5s,K4s,K3s,K2s,Q8s,Q7s,J8s,J7s,T7s,96s,75s,65s,54s,55,44,33,22,QJo,A8o,A7o,A6o,A5o,A4o,A3o,A2o,K9o,K8o,QJo,QTo,Q9o,Q8o,JTo,J9o,J8o,T9o,T8o,98o,Q6s,Q5s,Q4s,Q3s,Q2s,85s,43s,J6s",
+                           "A9o,KTo,K9s,K8s,K7s,K6s,97s,86s",
+                           "AA,KK,QQ,AKs,AKo",
+                           "AKo,AQo,AJo,ATo,KQo,KJo,AQs,AJs,ATs,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,KQs,KJs,KTs,QJs,QTs,Q9s,JTs,J9s,T9s,T8s,98s,87s,76s,JJ,TT,99,88,77,66"],
         "name": "Open BU",
         "tag": "open_bu"
     },
@@ -116,13 +124,26 @@ var SHEETS = [
         "tag": "defense_sb"
     },
     {
-        "cards": [
-            "66,77,88,99,TT,JJ,QQ,KK,AA,A2s,A3s,A4s,A5s,A6s,A7s,A8s,A9s,ATs,AJs,AQs,AKs,K9s,KTs,KJs,KQs,KAs,Q9s,QTs,QJs,QKs,QAs,J9s,JTs,JQs,JKs,JAs,T9s,98s,87s,76s,ATo,AJo,AQo,AKo,KQo",
-            ""
+        "cards": ["",
+         "AJo,ATo,KQo,KJo,A9s,A8s,A7s,A6s,KTs,QTs,JTs,T9s,T9s,98s,87s,88,77,66,55,44,33,22",
+         "KJs,ATs,A5s,A4s,A3s,A2s",
+         "AA,KK,AKs",
+         "AKo,AQo,AKs,AQs,AJs,QJs,,KQs,QQ,JJ,TT,99"
         ],
         "name": "Open MP",
         "tag": "open_mp"
-    }
+    },
+    {
+            "cards": ["",
+            "",
+            "",
+                "AA, AKs, AKo, KK, QQ",
+                "AQs, AJs, ATs, KQs, KJs, QJs, JTs, T9s, AQo, JJ,TT,99,88,77,66,55,44,33,22",
+                "AJo, KQo, A9s, A5s, QTs, 98s,87s"
+            ],
+            "name": "BU vs MP",
+            "tag": "defense_bu_vs_mp"
+        }
 ]
 
 

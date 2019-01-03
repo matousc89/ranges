@@ -43,11 +43,19 @@ td.selected_card3 {
 }
 
 td.selected_card4 {
-    background-color: rgb(211, 106, 106);
+    background-color: #3ADF00;
     color: white;
 }
 
+td.selected_card5 {
+    background-color: #0101DF;
+    color: white;
+}
 
+td.selected_card6 {
+    background-color: #FF0000;
+    color: white;
+}
 
 #sheets_selector td {
     width: auto;
