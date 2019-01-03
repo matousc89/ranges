@@ -6,6 +6,10 @@
     float: left;
 }
 
+.explanation_panel {
+    float: left;
+    margin-left: 30px;
+}
 
 td {
     text-align: center;
@@ -27,32 +31,32 @@ td.same_card {
     background-color: #EEEEEE;
 }
 
-td.selected_card1 {
+td.selected_card1, p.selected_card1  {
     background-color: #74226c;
     color: white;
 }
 
-td.selected_card2 {
+td.selected_card2, p.selected_card2 {
     background-color: #b168a9;
     color: white;
 }
 
-td.selected_card3 {
+td.selected_card3, p.selected_card3 {
     background-color: #EE2222;
     color: white;
 }
 
-td.selected_card4 {
+td.selected_card4, p.selected_card4 {
     background-color: #3ADF00;
     color: white;
 }
 
-td.selected_card5 {
+td.selected_card5, p.selected_card5 {
     background-color: #0101DF;
     color: white;
 }
 
-td.selected_card6 {
+td.selected_card6, p.selected_card6 {
     background-color: #FF0000;
     color: white;
 }
@@ -61,3 +65,4 @@ td.selected_card6 {
     width: auto;
     text-align: left;
 }
+
