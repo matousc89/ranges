@@ -232,29 +232,6 @@ class HandMatrix {
         };
         $("#"+ this.board_id).html(matrix_content);
 
-        // // selection part
-        // $("#" + this.board_id + " td").click(function() {
-        //     var card_classes = $(this).attr('class').split(" ");
-        //     var card_selected = "";
-        //     for (i = 0; i < card_classes.length; i++) {
-        //         if (card_classes[i].includes("cardid_")) {
-        //             card_selected = card_classes[i].split("_")[1];
-        //         };   
-        //     };
-        //     // highlight and store
-        //     if (self.selected_cards.includes(card_selected)) {
-        //         var index = self.selected_cards.indexOf(card_selected);
-        //         if (index > -1) {
-        //             self.selected_cards.splice(index, 1);
-        //         };
-        //         $(this).removeClass('selected_card');
-        //     } else {
-        //         self.selected_cards.push(card_selected);    
-        //         $(this).addClass('selected_card');
-        //     };
-
-        // });
-
     }
 
 }
