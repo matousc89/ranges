@@ -40,6 +40,7 @@
                 <button class="display_button" id="display_open_defend_ep_sb">SB</button>
                 <button class="display_button" id="display_open_defend_ep_bb">BB</button>
             </td>
+            <td></td>
         </tr>
         <tr>
             <td>MP</td>
@@ -50,6 +51,9 @@
                 <button class="display_button" id="display_open_defend_mp_sb">SB</button>
                 <button class="display_button" id="display_open_defend_mp_bb">BB</button>
             </td>
+            <td>
+                <button class="display_button" id="display_defense_mp_ep">EP</button>
+            </td>
         </tr>
         <tr>
             <td>CO</td>
@@ -59,6 +63,10 @@
                 <button class="display_button" id="display_open_defend_co_sm">SM</button>
                 <button class="display_button" id="display_open_defend_co_bb">BB</button>
             </td>
+            <td>
+                <button class="display_button" id="display_defense_co_ep">EP</button>
+                <button class="display_button" id="display_defense_co_mp">MP</button>
+            </td>
         </tr>
         <tr>
             <td>BU</td>
@@ -67,6 +75,11 @@
                 <button class="display_button" id="display_open_defend_bu_sm">SM</button>
                 <button class="display_button" id="display_open_defend_bu_bb">BB</button>
             </td>
+            <td>
+                <button class="display_button" id="display_defense_bu_ep">EP</button>
+                <button class="display_button" id="display_defense_bu_mp">MP</button>
+                <button class="display_button" id="display_defense_bu_co">CO</button>
+            </td>
         </tr>
         <tr>
             <td>SB</td>
@@ -74,16 +87,23 @@
             <td>
                 <button class="display_button" id="display_open_defend_sb_bb">BB</button>
             </td>
+            <td>
+                <button class="display_button" id="display_defense_sb_ep">EP</button>
+                <button class="display_button" id="display_defense_sb_mp">MP</button>
+                <button class="display_button" id="display_defense_sb_co">CO</button>
+                <button class="display_button" id="display_defense_sb_bu">BU</button>
+            </td>
         </tr>
         <tr>
             <td>BB</td>
             <td><button class="display_button" id="display_open_bb">All</button></td>
             <td></td>
             <td>
-                <button class="display_button" id="display_defense_bb_vs_ep">EP</button>
-                <button class="display_button" id="display_defense_bb_vs_co">CO</button>
-                <button class="display_button" id="display_defense_bb_vs_bu">BU</button>
-                <button class="display_button" id="display_defense_bb_vs_sb">SB</button>
+                <button class="display_button" id="display_defense_bb_ep">EP</button>
+                <button class="display_button" id="display_defense_bb_mp">MP</button>
+                <button class="display_button" id="display_defense_bb_co">CO</button>
+                <button class="display_button" id="display_defense_bb_bu">BU</button>
+                <button class="display_button" id="display_defense_bb_sb">SB</button>
             </td>
         </tr>
     </table>
@@ -101,6 +121,7 @@
 <script>
 
 let board1 = new HandMatrix("poker_matrix", "hint_panel");
+board1.draw("empty");
 
 $( document ).ready(function() {
 
