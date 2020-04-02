@@ -25,7 +25,6 @@
         <tr>
             <th></th>
             <th>Open</th>
-            <th>Open Defend</th>
             <th>Defend</th>
         </tr>
         <tr>
@@ -34,76 +33,66 @@
                 <button class="display_button" id="display_open_ep">All</button>
             </td>
             <td>
-                <button class="display_button" id="display_open_defend_ep_mp">MP</button>
-                <button class="display_button" id="display_open_defend_ep_co">CO</button>
-                <button class="display_button" id="display_open_defend_ep_bu">BU</button>
-                <button class="display_button" id="display_open_defend_ep_sb">SB</button>
-                <button class="display_button" id="display_open_defend_ep_bb">BB</button>
+                <button class="display_button open_defend" id="display_open_defend_ep_mp">MP</button>
+                <button class="display_button open_defend" id="display_open_defend_ep_co">CO</button>
+                <button class="display_button open_defend" id="display_open_defend_ep_bu">BU</button>
+                <button class="display_button open_defend" id="display_open_defend_ep_sb">SB</button>
+                <button class="display_button open_defend" id="display_open_defend_ep_bb">BB</button>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>MP</td>
             <td><button class="display_button" id="display_open_mp">All</button></td>
             <td>
-                <button class="display_button" id="display_open_defend_mp_co">CO</button>
-                <button class="display_button" id="display_open_defend_mp_bu">BU</button>
-                <button class="display_button" id="display_open_defend_mp_sb">SB</button>
-                <button class="display_button" id="display_open_defend_mp_bb">BB</button>
-            </td>
-            <td>
-                <button class="display_button" id="display_defense_mp_ep">EP</button>
+                <button class="display_button open_defend" id="display_open_defend_mp_co">CO</button>
+                <button class="display_button open_defend" id="display_open_defend_mp_bu">BU</button>
+                <button class="display_button open_defend" id="display_open_defend_mp_sb">SB</button>
+                <button class="display_button open_defend" id="display_open_defend_mp_bb">BB</button>
+                <button class="display_button raise_defend" id="display_defense_mp_ep">EP</button>
             </td>
         </tr>
         <tr>
             <td>CO</td>
             <td><button class="display_button" id="display_open_co">All</button></td>
             <td>
-                <button class="display_button" id="display_open_defend_co_bu">BU</button>
-                <button class="display_button" id="display_open_defend_co_sm">SM</button>
-                <button class="display_button" id="display_open_defend_co_bb">BB</button>
-            </td>
-            <td>
-                <button class="display_button" id="display_defense_co_ep">EP</button>
-                <button class="display_button" id="display_defense_co_mp">MP</button>
+                <button class="display_button open_defend" id="display_open_defend_co_bu">BU</button>
+                <button class="display_button open_defend" id="display_open_defend_co_sm">SM</button>
+                <button class="display_button open_defend" id="display_open_defend_co_bb">BB</button>
+                <button class="display_button raise_defend" id="display_defense_co_ep">EP</button>
+                <button class="display_button raise_defend" id="display_defense_co_mp">MP</button>
             </td>
         </tr>
         <tr>
             <td>BU</td>
             <td><button class="display_button" id="display_open_bu">All</button></td>
             <td>
-                <button class="display_button" id="display_open_defend_bu_sm">SM</button>
-                <button class="display_button" id="display_open_defend_bu_bb">BB</button>
-            </td>
-            <td>
-                <button class="display_button" id="display_defense_bu_ep">EP</button>
-                <button class="display_button" id="display_defense_bu_mp">MP</button>
-                <button class="display_button" id="display_defense_bu_co">CO</button>
+                <button class="display_button open_defend" id="display_open_defend_bu_sm">SM</button>
+                <button class="display_button open_defend" id="display_open_defend_bu_bb">BB</button>
+                <button class="display_button raise_defend" id="display_defense_bu_ep">EP</button>
+                <button class="display_button raise_defend" id="display_defense_bu_mp">MP</button>
+                <button class="display_button raise_defend" id="display_defense_bu_co">CO</button>
             </td>
         </tr>
         <tr>
             <td>SB</td>
             <td><button class="display_button" id="display_open_sb">All</button></td>
             <td>
-                <button class="display_button" id="display_open_defend_sb_bb">BB</button>
-            </td>
-            <td>
-                <button class="display_button" id="display_defense_sb_ep">EP</button>
-                <button class="display_button" id="display_defense_sb_mp">MP</button>
-                <button class="display_button" id="display_defense_sb_co">CO</button>
-                <button class="display_button" id="display_defense_sb_bu">BU</button>
+                <button class="display_button open_defend" id="display_open_defend_sb_bb">BB</button>
+                <button class="display_button raise_defend" id="display_defense_sb_ep">EP</button>
+                <button class="display_button raise_defend" id="display_defense_sb_mp">MP</button>
+                <button class="display_button raise_defend" id="display_defense_sb_co">CO</button>
+                <button class="display_button raise_defend" id="display_defense_sb_bu">BU</button>
             </td>
         </tr>
         <tr>
             <td>BB</td>
             <td><button class="display_button" id="display_open_bb">All</button></td>
-            <td></td>
             <td>
-                <button class="display_button" id="display_defense_bb_ep">EP</button>
-                <button class="display_button" id="display_defense_bb_mp">MP</button>
-                <button class="display_button" id="display_defense_bb_co">CO</button>
-                <button class="display_button" id="display_defense_bb_bu">BU</button>
-                <button class="display_button" id="display_defense_bb_sb">SB</button>
+                <button class="display_button raise_defend" id="display_defense_bb_ep">EP</button>
+                <button class="display_button raise_defend" id="display_defense_bb_mp">MP</button>
+                <button class="display_button raise_defend" id="display_defense_bb_co">CO</button>
+                <button class="display_button raise_defend" id="display_defense_bb_bu">BU</button>
+                <button class="display_button raise_defend" id="display_defense_bb_sb">SB</button>
             </td>
         </tr>
     </table>

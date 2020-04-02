@@ -7,9 +7,20 @@
 }
 
 .display_button {
-    width: 20px;
+    width: 40px;
     text-align: center;
+    font-weight: bold;
 }
+
+.raise_defend {
+    background-color: #e59f71;
+}
+
+.open_defend {
+    background-color: #afd2e9;
+}
+
+
 
 .explanation_panel {
     float: left;
