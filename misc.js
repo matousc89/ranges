@@ -367,30 +367,69 @@ var SHEETS = {
         ],
         "name": "Open defend SB vs BB"
     },
-
-
-
+    "open_ep": {
+        "sets": [
+            {
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo",
+                "note": "Open 4bb",
+                "color": "selected_card1"
+            },
+        ],
+        "name": "Open EP"
+    },
+    "open_mp": {
+        "sets": [
+            {
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo,87s,76s,33,22,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s",
+                "note": "Open 3bb",
+                "color": "selected_card1"
+            },
+        ],
+        "name": "Open MP"
+    },
     "open_co": {
         "sets": [
             {
-                "cards": "ATo,A9o,A8o,KTo,QJo,QTo,JTo,A7s,A6s,K8s,Q9s,Q8s,J9s,J8s,T8s,97s,86s,76s,75s,65s,77,66,55,44,33,22,87s,98s,T9s,JTs,AJo,KJo,AQo,KQo,QJs,QTs,KQs,KJs,KTs,K9s,AQs,AJs,ATs,A9s,A8s",
-                "note": "Open",
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo,87s,76s,33,22,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,K9s,K8s,Q8s,J8s,T8s,Q9s,KJo,KTo,QTo,QJo,JTo,A9o,A8o,97s,86s,75s,65s",
+                "note": "Open 2.5bb",
                 "color": "selected_card1"
             },
-            {
-                "cards": "AKo,AKs,AA,KK,QQ",
-                "note": "4bet, All in",
-                "color": "selected_card3"
-            },
-            {
-                "cards": "JJ,TT,99,88",
-                "note": "Call 3bet",
-                "color": "selected_card4"
-            }
         ],
         "name": "Open CO"
+    },
+    "open_bu": {
+        "sets": [
+            {
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo,87s,76s,33,22,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,K9s,K8s,Q8s,J8s,T8s,Q9s,KJo,KTo,QTo,QJo,JTo,A9o,A8o,97s,86s,75s,65s,A7o,A6o,A5o,A4o,A3o,A2o,K5o,Q5o,Q6o,K6o,K7o,Q7o,Q8o,K8o,K9o,Q9o,J9o,J8o,J7o,T6o,T7o,T8o,T9o,98o,97o,96o,86o,87o,76o,75o,65o,K7s,Q7s,J7s,T7s,T6s,96s,95s,85s,74s,64s,54s,53s,43s,32s,42s,52s,62s,72s,82s,92s,T2s,J2s,Q2s,K2s,K3s,Q3s,J3s,T3s,93s,83s,73s,63s,84s,94s,T4s,T5s,J5s,J4s,Q4s,Q5s,K5s,K4s,K6s,Q6s,J6s",
+                "note": "Open 2bb",
+                "color": "selected_card1"
+            },
+        ],
+        "name": "Open BU"
+    },
+    "open_sb": {
+        "sets": [
+            {
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo,87s,76s,33,22,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,K9s,K8s,Q8s,J8s,T8s,Q9s,KJo,KTo,QTo,QJo,JTo,A9o,A8o,97s,86s,75s,65s,A7o,A6o,A5o,A4o,A3o,A2o,K5o,Q5o,Q6o,K6o,K7o,Q7o,Q8o,K8o,K9o,Q9o,J9o,J8o,J7o,T6o,T7o,T8o,T9o,98o,97o,96o,86o,87o,76o,75o,65o,K7s,Q7s,J7s,T7s,T6s,96s,95s,85s,74s,64s,54s,53s,43s,32s,42s,52s,62s,72s,82s,92s,T2s,J2s,Q2s,K2s,K3s,Q3s,J3s,T3s,93s,83s,73s,63s,84s,94s,T4s,T5s,J5s,J4s,Q4s,Q5s,K5s,K4s,K6s,Q6s,J6s",
+                "note": "Open 2bb",
+                "color": "selected_card1"
+            },
+        ],
+        "name": "Open sb"
+    },
+    "open_bb": {
+        "sets": [
+            {
+                "cards": "AA,AKo,KK,AKs,AQo,KQo,KQs,QQ,AQs,AJs,KJs,QJs,JJ,TT,99,88,77,66,55,44,98s,T9s,J9s,JTs,QTs,KTs,ATs,AJo,ATo,87s,76s,33,22,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,K9s,K8s,Q8s,J8s,T8s,Q9s,KJo,KTo,QTo,QJo,JTo,A9o,A8o,97s,86s,75s,65s",
+                "note": "Open 4bb",
+                "color": "selected_card1"
+            },
+        ],
+        "name": "Open BB"
     }
 }
+
+
 
 
 class HandMatrix {
