@@ -25,46 +25,60 @@
         <tr>
             <th></th>
             <th>Open</th>
+            <th>Open Defend</th>
             <th>Defend</th>
         </tr>
         <tr>
             <td>EP</td>
-            <td><button class="display_button" id="display_open_ep">All</button></td>
+            <td>
+                <button class="display_button" id="display_open_ep">All</button>
+            </td>
+            <td>
+                <button class="display_button" id="display_open_defend_ep_mp">MP</button>
+                <button class="display_button" id="display_open_defend_ep_co">CO</button>
+                <button class="display_button" id="display_open_defend_ep_bu">BU</button>
+                <button class="display_button" id="display_open_defend_ep_sb">SB</button>
+                <button class="display_button" id="display_open_defend_ep_bb">BB</button>
+            </td>
         </tr>
         <tr>
             <td>MP</td>
             <td><button class="display_button" id="display_open_mp">All</button></td>
             <td>
-                <button class="display_button" id="display_defense_mp">EP</button>
+                <button class="display_button" id="display_open_defend_mp_co">CO</button>
+                <button class="display_button" id="display_open_defend_mp_bu">BU</button>
+                <button class="display_button" id="display_open_defend_mp_sb">SB</button>
+                <button class="display_button" id="display_open_defend_mp_bb">BB</button>
             </td>
         </tr>
         <tr>
             <td>CO</td>
             <td><button class="display_button" id="display_open_co">All</button></td>
             <td>
-                <button class="display_button" id="display_defense_mp">EP</button>
-                <button class="display_button" id="display_defense_co_vs_mp">MP</button>
+                <button class="display_button" id="display_open_defend_co_bu">BU</button>
+                <button class="display_button" id="display_open_defend_co_sm">SM</button>
+                <button class="display_button" id="display_open_defend_co_bb">BB</button>
             </td>
         </tr>
         <tr>
             <td>BU</td>
             <td><button class="display_button" id="display_open_bu">All</button></td>
             <td>
-                <button class="display_button" id="display_defense_mp">EP</button>
-                <button class="display_button" id="display_defense_bu_vs_mp">MP</button>
-                <button class="display_button" id="display_defense_bu_vs_co">CO</button>
+                <button class="display_button" id="display_open_defend_bu_sm">SM</button>
+                <button class="display_button" id="display_open_defend_bu_bb">BB</button>
             </td>
         </tr>
         <tr>
             <td>SB</td>
             <td><button class="display_button" id="display_open_sb">All</button></td>
             <td>
-                <button class="display_button" id="display_defense_sb">All</button>
+                <button class="display_button" id="display_open_defend_sb_bb">BB</button>
             </td>
         </tr>
         <tr>
             <td>BB</td>
             <td><button class="display_button" id="display_open_bb">All</button></td>
+            <td></td>
             <td>
                 <button class="display_button" id="display_defense_bb_vs_ep">EP</button>
                 <button class="display_button" id="display_defense_bb_vs_co">CO</button>
@@ -80,50 +94,19 @@
     <table id="poker_matrix"></table>
 </div>
 
-<div class="explanation_panel">
-Explanation:<br>
-<p class="selected_card2">open, fold to 3bet</p>
-<p class="selected_card4">value 4bet after 3bet of your open</p>
-<p class="selected_card6">bluff 4bet, fold to 5bet</p>
-<p class="selected_card5">call 3bet</p>
+<div class="explanation_panel" id="hint_panel">
 </div>
-
-
-
-
-
-
-
 
 
 <script>
 
-var selected_cards = [];
-let board1 = new HandMatrix("poker_matrix");
-board1.draw_board(selected_cards);
-
+let board1 = new HandMatrix("poker_matrix", "hint_panel");
 
 $( document ).ready(function() {
 
-    // $("#export_button").click(function() {
-    //     alert(selected_cards);
-    // });
-
-    // var content = "";
-    // for (i = 0; i < SHEETS.length; i++) {
-    //     var item = SHEETS[i]
-    //     content += "<tr>";
-    //     content += "<td>" + item.name + "</td>";
-    //     content += '<td><button class="display_button" id="display_' + item.name + '">Show</button></td>';
-    //     content += "</tr>";    
-    // }    
-    // $("#sheets_selector").html(content);
-
     $(".display_button").click(function() {
         var sheet_name = $(this).attr("id").substring(8);
-        var sheet = get_sheet(sheet_name);
-        selected_cards = sheet.cards;
-        board1.draw_board(selected_cards);
+        board1.draw(sheet_name);
     });
 
 });

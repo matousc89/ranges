@@ -6,6 +6,11 @@
     float: left;
 }
 
+.display_button {
+    width: 20px;
+    text-align: center;
+}
+
 .explanation_panel {
     float: left;
     margin-left: 30px;
@@ -31,33 +36,33 @@ td.same_card {
     background-color: #EEEEEE;
 }
 
-td.selected_card1, p.selected_card1  {
-    background-color: #74226c;
+.selected_card1  {
+    background-color: #74226c !important;
     color: white;
 }
 
-td.selected_card2, p.selected_card2 {
-    background-color: #b168a9;
+.selected_card2 {
+    background-color: #b168a9 !important;
     color: white;
 }
 
-td.selected_card3, p.selected_card3 {
-    background-color: #EE2222;
+.selected_card3 {
+    background-color: #EE2222 !important;
     color: white;
 }
 
-td.selected_card4, p.selected_card4 {
-    background-color: #3ADF00;
+.selected_card4 {
+    background-color: #3ADF00 !important;
     color: white;
 }
 
-td.selected_card5, p.selected_card5 {
-    background-color: #0101DF;
+.selected_card5 {
+    background-color: #0101DF !important;
     color: white;
 }
 
-td.selected_card6, p.selected_card6 {
-    background-color: #FF0000;
+.selected_card6 {
+    background-color: #FF0000 !important;
     color: white;
 }
 
