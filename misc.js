@@ -157,7 +157,37 @@ var SHEETS = {
         ],
         "name": "Open defend CO vs BU"
     },
-    "open_defend_bu_sm": {
+    "open_defend_co_sb": {
+        "sets": [
+            {
+                "cards": "QQ,KK,AA,AKs,AKo",
+                "note": "4bet, All in",
+                "color": "selected_card4"
+            },
+            {
+                "cards": "88,99,TT,JJ",
+                "note": "call",
+                "color": "selected_card5"
+            }
+        ],
+        "name": "Open defend CO vs SB"
+    },
+    "open_defend_co_bb": {
+        "sets": [
+            {
+                "cards": "QQ,KK,AA,AKs,AKo",
+                "note": "4bet, All in",
+                "color": "selected_card4"
+            },
+            {
+                "cards": "88,99,TT,JJ",
+                "note": "call",
+                "color": "selected_card5"
+            }
+        ],
+        "name": "Open defend CO vs BU"
+    },
+    "open_defend_bu_sb": {
         "sets": [
             {
                 "cards": "JJ,QQ,KK,AA,AKs,AKo",
@@ -170,7 +200,7 @@ var SHEETS = {
                 "color": "selected_card5"
             }
         ],
-        "name": "Open defend BU vs SM"
+        "name": "Open defend BU vs SB"
     },
     "open_defend_bu_bb": {
         "sets": [
